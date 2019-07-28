@@ -7,12 +7,15 @@ package com.kurjakrichard.springledger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  *
  * @author balza
  */
 @SpringBootApplication
+@EnableConfigurationProperties
 public class SpringLedgerApplication {
 
     public static void main(String[] args) {
