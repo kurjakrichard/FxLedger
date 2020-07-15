@@ -8,16 +8,18 @@ package com.sire.fxledger.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
+import com.sire.fxledger.model.FxLedgerModel;
 
 /**
  *
  * @author sire
  */
-public class fxLedgerFXMLController implements Initializable{
+public class FxLedgerFXMLController implements Initializable {
+
+    private final FxLedgerModel fxLedgerModel = new FxLedgerModel();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       
     }
-    
+
 }
