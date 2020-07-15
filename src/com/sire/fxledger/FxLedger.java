@@ -22,6 +22,7 @@ public class FxLedger extends Application{
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("fxLedgerFXML.fxml"));
         Scene scene = new Scene(root);
+        //scene.getStylesheets().add(com.sire.fxledger.FxLedger.class.getResource("Style.css").toExternalForm());
         stage.setTitle("FxLedger");
         //stage.getIcons().add(new Image("8tracks-icon.png"));
         stage.setScene(scene);
