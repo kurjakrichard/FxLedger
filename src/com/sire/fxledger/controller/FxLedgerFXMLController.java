@@ -16,10 +16,11 @@ import com.sire.fxledger.model.FxLedgerModel;
  */
 public class FxLedgerFXMLController implements Initializable {
 
-    private final FxLedgerModel fxLedgerModel = new FxLedgerModel();
+    private FxLedgerModel fxLedgerModel;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        fxLedgerModel = new FxLedgerModel();
     }
 
 }

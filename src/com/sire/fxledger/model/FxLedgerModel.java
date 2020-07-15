@@ -69,6 +69,7 @@ public class FxLedgerModel {
     String excelFilePath = "iranyitoszam.xlsx";
 
 //</editor-fold>
+    
     public FxLedgerModel() {
         connect(URL);
         createNewTableIfNotExist(POSTALCODETABLE);
