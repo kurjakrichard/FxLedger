@@ -54,7 +54,6 @@
       <Pane prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Label" />
-            <TextField floatText="szöveg" layoutX="138.0" layoutY="4.0" />
          </children>
       </Pane>
    </bottom>
