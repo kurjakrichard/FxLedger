@@ -35,4 +35,8 @@ nb-configuration.xml
 
 nbproject/
 
+manifest.mf
+build.xml
+
+
 
