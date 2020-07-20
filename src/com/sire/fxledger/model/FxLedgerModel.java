@@ -172,7 +172,7 @@ public class FxLedgerModel {
                             System.out.println(e.getMessage());
                         }
                     } else {
-                        System.out.println("Hiba történt az adat felvitelekor!");
+                        System.out.println("Hiba történt az import során!");
                     }
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(FxLedgerModel.class.getName()).log(Level.SEVERE, null, ex);
