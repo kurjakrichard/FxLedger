@@ -24,9 +24,10 @@ import org.apache.poi.xssf.usermodel.*;
  *
  * @author sire
  */
-public class FxLedgerModel {
+public final class FxLedgerModel {
 
 //<editor-fold defaultstate="collapsed" desc="Class variables">
+    private static FxLedgerModel handler = null;
     private final String FILENAME = "fxledger.db";
     private final String URL = "jdbc:sqlite:" + FILENAME;
     private Connection conn = null;
@@ -76,6 +77,17 @@ public class FxLedgerModel {
         createNewTableIfNotExist(CUSTOMERTABLE);
         createNewTableIfNotExist(EMPLOYEETABLE);
         excelToDatabase(excelFilePath);
+    }
+    
+        /**
+     *Prevent to run more than one database connection
+     * @return
+     */
+    public static FxLedgerModel getInstance() {
+        if (handler == null) {
+            handler = new FxLedgerModel();
+        }
+        return handler;
     }
 
     /**

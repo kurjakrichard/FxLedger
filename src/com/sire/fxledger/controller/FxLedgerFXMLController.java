@@ -20,7 +20,8 @@ public class FxLedgerFXMLController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        fxLedgerModel = new FxLedgerModel();
+        fxLedgerModel = FxLedgerModel.getInstance();
+
     }
 
 }

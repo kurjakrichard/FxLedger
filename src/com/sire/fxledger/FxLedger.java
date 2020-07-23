@@ -5,6 +5,7 @@
  */
 package com.sire.fxledger;
 
+import com.sire.fxledger.model.FxLedgerModel;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +17,7 @@ import javafx.stage.Stage;
  *
  * @author sire
  */
-public class FxLedger extends Application{
+public class FxLedger extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -26,11 +27,15 @@ public class FxLedger extends Application{
         stage.setTitle("FxLedger");
         //stage.getIcons().add(new Image("8tracks-icon.png"));
         stage.setScene(scene);
-        stage.show(); 
+        stage.show();
+        
+        new Thread(() -> {
+            FxLedgerModel.getInstance();
+        }).start();
     }
-    
+
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
